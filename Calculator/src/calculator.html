@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-800">
+    <div class="card pt-8 flex justify-center items-center h-screen">
+        <div class="calc w-100 h-150 border-2 border-gray-950 rounded-xl">
+            <p class="text-center text-2xl font-bold py-5 text-sky-100">Calculator</p>
+            <p class="border-2 border-sky-300  rounded-xl w-90 m-5 h-20 text-white text-2xl text-right pt-5 px-2" id="inputvalue" ></p>
+            <div class="box">
+                <div class="row1 flex gap-2 m-2 justify-center items-center h-fit">
+                    <button class="bg-blue-400 rounded-xl border-2 border-sky-700  w-20 h-20 cursor-pointer hover:bg-blue-300 text-2xl text-white font-semibold" onclick="press('1')">1</button>
+                    <button class="bg-blue-400 rounded-xl border-2 border-sky-700  w-20 h-20 cursor-pointer hover:bg-blue-300 text-2xl text-white font-semibold" onclick="press('2')">2</button>
+                    <button class="bg-blue-400 rounded-xl border-2 border-sky-700  w-20 h-20 cursor-pointer hover:bg-blue-300 text-2xl text-white font-semibold" onclick="press('3')">3</button>
+                    <button class="bg-blue-400 rounded-xl border-2 border-sky-700  w-20 h-20 cursor-pointer hover:bg-blue-300 text-2xl text-white font-semibold" onclick="press('+')">+</button>
+                </div>
+                <div class="row2 flex gap-2 m-2 justify-center items-center h-fit">
+                    <button class="bg-blue-400 rounded-xl border-2 border-sky-700  w-20 h-20 cursor-pointer hover:bg-blue-300 text-2xl text-white font-semibold" onclick="press('4')">4</button>
+                    <button class="bg-blue-400 rounded-xl border-2 border-sky-700  w-20 h-20 cursor-pointer hover:bg-blue-300 text-2xl text-white font-semibold" onclick="press('5')">5</button>
+                    <button class="bg-blue-400 rounded-xl border-2 border-sky-700  w-20 h-20 cursor-pointer hover:bg-blue-300 text-2xl text-white font-semibold" onclick="press('6')">6</button>
+                    <button class="bg-blue-400 rounded-xl border-2 border-sky-700  w-20 h-20 cursor-pointer hover:bg-blue-300 text-2xl text-white font-semibold" onclick="press('-')">-</button>
+                </div>
+                <div class="row3 flex gap-2 m-2 justify-center items-center h-fit">
+                    <button class="bg-blue-400 rounded-xl border-2 border-sky-700  w-20 h-20 cursor-pointer hover:bg-blue-300 text-2xl text-white font-semibold" onclick="press('7')">7</button>
+                    <button class="bg-blue-400 rounded-xl border-2 border-sky-700  w-20 h-20 cursor-pointer hover:bg-blue-300 text-2xl text-white font-semibold" onclick="press('8')">8</button>
+                    <button class="bg-blue-400 rounded-xl border-2 border-sky-700  w-20 h-20 cursor-pointer hover:bg-blue-300 text-2xl text-white font-semibold" onclick="press('9')">9</button>
+                    <button class="bg-blue-400 rounded-xl border-2 border-sky-700  w-20 h-20 cursor-pointer hover:bg-blue-300 text-2xl text-white font-semibold" onclick="press('*')">*</button>
+                </div>
+                <div class="row4 flex gap-2 m-2 justify-center items-center h-fit">
+                    <button class="bg-blue-400 rounded-xl border-2 border-sky-700  w-20 h-20 cursor-pointer hover:bg-blue-300 text-2xl text-white font-semibold" onclick="press('.')">.</button>
+                    <button class="bg-blue-400 rounded-xl border-2 border-sky-700  w-20 h-20 cursor-pointer hover:bg-blue-300 text-2xl text-white font-semibold" onclick="press('0')">0</button>
+                    <button class="bg-blue-400 rounded-xl border-2 border-sky-700  w-20 h-20 cursor-pointer hover:bg-blue-300 text-2xl text-white font-semibold" onclick="clean()">C</button>
+                    <button class="bg-green-400 rounded-xl border-2 border-green-700  w-20 h-20 cursor-pointer hover:bg-green-300 text-2xl text-white font-semibold" onclick="equal()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
