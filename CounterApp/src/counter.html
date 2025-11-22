@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-cyan-900">
+<div class="boxvalue">
+    <p class="text-center border-2 border-purple-950 rounded-xl w-50 h-20 pt-5 absolute left-1/2 -translate-x-1/2  top-20 text-2xl font-semibold bg-red-200">Counter App</p>
+    <div class="card flex justify-center items-center h-screen gap-10">  
+        <div class="leftbox">
+            <input type="number" placeholder="Enter desired number"  id="desiredValue" class="w-40 h-40 border-2 border-purple-700 rounded-xl text-center bg-red-300 text-3xl font-semibold">
+        </div>
+        <div class="centerContent">
+            <button onclick="increase()" class="w-20 h-20 mb-2 rounded-xl border-2 border-purple-700 bg-pink-300 hover:bg-pink-200 hover:border-purple-500 cursor-pointer text-center text-4xl font-semibold ">^</button>
+            <br>
+            <button onclick="decrease()" class="w-20 h-20 mt-2 rounded-xl border-2 border-purple-700 bg-pink-300 hover:bg-pink-200 hover:border-purple-500 cursor-pointer text-center  text-4xl ">v</button>
+        </div>
+        <div class="rightbox">
+            <p id="changingValue" class="w-40 h-40 border-2 border-purple-700 rounded-xl text-center bg-red-300 pt-15 text-3xl font-semibold">0</p>
+        </div>
+    </div>
+</div>
+<script src="counter.js"></script>
+</body>
+</html>
